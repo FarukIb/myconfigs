@@ -123,14 +123,3 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
     zle -N zle-line-finish
   fi
 }
-
-[ -f "/home/faruk/.ghcup/env" ] && . "/home/faruk/.ghcup/env" # ghcup-env
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PATH="$HOME/.config/pear/bin:$PATH"
-export PATH="$HOME/Qt/6.11.0/gcc_64/bin/qmake:$PATH"
